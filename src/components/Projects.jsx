@@ -7,16 +7,8 @@ const projects = [
     title: 'UI-dev',
     image: '/ui-dev.png',
     tags: ['Next.js', 'TailwindCSS'],
-    github: 'https://github.com/diegof-22/FinanceFlow',
-    live: 'https://streamsync-it.vercel.app/',
-    category: 'web'
-  },
-  {
-    title: 'Nexus-Trading',
-    image: '/nexus-trading.png',
-    tags: ['Next.js', 'TailwindCSS','Prisma'],
-    github: 'https://github.com/diegof-22/FinanceFlow',
-    live: 'https://streamsync-it.vercel.app/',
+    github: 'https://github.com/diegof-22/ui-components',
+    live: 'https://ui-components-two.vercel.app/',
     category: 'web'
   },
   {
