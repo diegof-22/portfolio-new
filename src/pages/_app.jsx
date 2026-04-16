@@ -1,11 +1,18 @@
 import '../styles/globals.css'
-import { Analytics } from '@vercel/analytics/next'
+import { Analytics } from '@vercel/analytics/react'
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+});
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <main  className={poppins.className}>
       <Component {...pageProps} />
       <Analytics />
-    </>
+    </main>
   )
 } 

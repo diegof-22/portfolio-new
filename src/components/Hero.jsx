@@ -1,8 +1,8 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { TypeAnimation } from 'react-type-animation'
 import { FiDownload, FiArrowUp } from 'react-icons/fi'
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 
 
 const ScrollTopButton = dynamic(() => import('./ScrollTopButton'), { ssr: false })
@@ -36,7 +36,7 @@ export default function Hero() {
 
     setIsAnimating(true)
     const link = document.createElement('a')
-    link.href = '/Diego-Fanciulli-CV.pdf'
+    link.href = '/CV-DiegoFanciulli.pdf'
     link.download = 'Diego-Fanciulli-CV.pdf'
     document.body.appendChild(link)
     link.click()
@@ -69,8 +69,6 @@ export default function Hero() {
                         'Diego',
                         2000,
                         'Web Developer',
-                        2000,
-                        'UI/UX Designer',
                         2000,
                       ]}
                       wrapper="span"
@@ -145,10 +143,13 @@ export default function Hero() {
 
                 <div className="relative w-full h-full rounded-full p-2 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
                   <div className="w-full h-full rounded-full overflow-hidden bg-background">
-                    <img
+                    <Image
                       src="/dev-ed-wave.png"
                       alt="Diego"
-                      className="w-full h-full object-cover rounded-full hover:scale-110 transition-transform duration-500 ease-out"
+                      fill
+                      priority
+                      sizes="(max-width: 768px) 280px, (max-width: 1024px) 384px, 512px"
+                      className="object-cover rounded-full hover:scale-110 transition-transform duration-500 ease-out"
                     />
                   </div>
                 </div>

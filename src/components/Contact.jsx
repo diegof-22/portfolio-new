@@ -3,10 +3,7 @@ import { FiMail, FiGithub, FiLinkedin } from 'react-icons/fi'
 
 export default function Contact() {
   const handleSubmit = (e) => {
-    e.preventDefault();
-
-    
-    
+    e.preventDefault(); 
   }
 
   return (

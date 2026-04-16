@@ -14,6 +14,8 @@ const skills = [
   'MongoDB',
   'JavaScript',
   'Docker',
+  'Java',
+  'FireBase'
 
   
 ]
